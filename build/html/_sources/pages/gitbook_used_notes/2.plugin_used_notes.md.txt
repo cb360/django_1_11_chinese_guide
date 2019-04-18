@@ -1,0 +1,68 @@
+# gitbook插件试用记录
+
+## 推荐的插件
+
+### search-pro
+**中文搜索的增强版搜索插件。**
+- 支持中文 关键字高亮
+
+book.json文件中插件部分插入如下代码：
+```javascript
+{
+    "plugins": [
+      "-lunr", "-search", "search-pro"
+    ]
+}
+```
+
+### splitter
+**在左侧目录和右侧内容之间添加一个可以拖拽的栏，用来调整两边的宽度。**
+- 拖动调整侧栏宽度
+
+book.json文件中插件部分插入如下代码：
+```javascript
+{
+    "plugins": [
+      "splitter"
+    ]
+}
+```
+
+
+### page-footer-ex
+**定制每篇文章的页脚，可以添加版权和显示文件修改时间和新增时间。**
+
+- 插件官网：https://github.com/zq99299/gitbook-plugin-page-footer-ex
+
+book.json文件中插件部分插入如下代码：
+```javascript
+{
+    "plugins": [
+        "page-footer-ex"
+    ],
+    "pluginsConfig": {
+        "page-footer-ex": {
+            "copyright": "By <em>author name</em>",
+            "markdown": false,
+            "update_label": "<i>updated</i>",
+            "update_format": "YYYY-MM-DD HH:mm:ss"
+        }
+    }
+}
+```
+or
+```javascript
+{
+    "plugins": [
+        "page-footer-ex"
+    ],
+    "pluginsConfig": {
+        "page-footer-ex": {
+            "copyright": "[mrcode](https://github.com/zq99299)",
+            "markdown": true,
+            "update_label": "<i>updated</i>",
+            "update_format": "YYYY-MM-DD HH:mm:ss"
+        }
+    }
+}
+```
