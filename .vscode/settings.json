@@ -1,3 +1,17 @@
 {
-    "restructuredtext.confPath": "${workspaceFolder}\\source"
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "python.pythonPath": "D:/pyenv/book/Scripts/python",
+    "terminal.integrated.shellArgs.windows": ["/k", "D:/pyenv/book/Scripts/activate"],
+    "pasteImage.path": "${currentFileDir}/asset",
+    "restructuredtext.confPath": "${workspaceFolder}\\source",
+    "restructuredtext.builtDocumentationPath": "${workspaceFolder}/build/html",
+    "restructuredtext.linter.extraArgs": [
+        "--ignore D000",
+        "--ignore D002",
+        "--ignore D003",
+        "--ignore D004",
+        "--ignore D005",
+        "--max-line-length 80"
+    ]
 }

@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'django_1_11_chinese_guide'
+project = 'django_1_11_中文指南'
 copyright = '2019, chenbing.name'
 author = 'chenbing.name'
 
